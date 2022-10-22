@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="488.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.visual_db.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Введите номер студента(id):" />
+   <TextField fx:id="idField" prefHeight="5.0" prefWidth="448.0" />
+   <Label text="Введите фамилию студента(surname):" />
+   <TextField fx:id="surnameField" prefHeight="25.0" prefWidth="402.0" />
+   <Label text="Введите имя студента(name):" />
+   <TextField fx:id="nameField" />
+   <Label text="Введите профессию студента(profession):" />
+   <TextField fx:id="professionField" />
+   <Label text="Введите возраст студента(age):" />
+   <TextField fx:id="ageField" />
+   <Button id="enrollStudent" fx:id="onButtonOneClick" mnemonicParsing="false" onAction="#onButtonOneClick" text="Зачислить студента" />
+   <Label fx:id="statusLabel" text="Статус последней операции" />
+   <Button mnemonicParsing="false" onAction="#Button2" text="Список студентов" />
+   <TableView fx:id="studentsTable" prefHeight="200.0" prefWidth="200.0" />
+   <Label text="Введите фамилию студента для отчисления(surname):" />
+   <TextField fx:id="surField" alignment="CENTER" text="' '" />
+   <Button mnemonicParsing="false" onAction="#Button3" text="Отчислить студента" />
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+</VBox>
