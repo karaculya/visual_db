@@ -1,2 +1,2 @@
 # dataBase
-My first work with data base
+My first work with database
